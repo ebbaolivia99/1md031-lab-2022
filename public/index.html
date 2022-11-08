@@ -1,56 +1,59 @@
 <!DOCTYPE HTML>
 <html lang="en">
    <head>
-       <title>Welcome to SuperSmash</title>
        <meta charset="utf-8"/>
+       <link rel="icon" type="image/svg+xml" href="http://localhost:8080"> 
+       <link rel="stylesheet" href=style.css>
+       <title>Welcome to SuperSmash</title>
    </head>
    <body>
-    <header>
-        <h1>Welcome to SuperSmash online</h1>    
+    <header class="header">
+            <img id="headimg" src="https://images.affordableseating.net/dpr_1.0,f_auto,q_auto/afd/media/contenttype/restaurant_bar_-_header.jpg"/>
+            <h1 id="textpos">Welcome to SuperSmash online</h1>  
     </header>
+
     <main>
-        <section>
-            <h4>Select burgers</h4>
-            <p>This is where you select burgers</p>
-        <div style="display: inline-block">
-            <h4>Super Smash burger</h4>
+        <section id="menu" class="wrapper">
+            <h4 class="box d">Select burgers</h4>
+            <p class="box e">This is where you select burgers</p>
+        <div style="display: inline-block" class="box a">
+            <h4>SUPER SMASH BURGER</h4>
             <img src="https://i.pinimg.com/originals/8f/41/b2/8f41b2d2b12791088da03500bd5cf909.jpg"
-            width="220"
-            height="200"/>
-            <ul>
-                <li>600 kCal</li>
-                <li>Contains gluten</li>
-                <li>Contains lactose</li>
+            width="260"
+            height="250"/>
+            <ul class="allergies">
+                <li>Cheese, pickled onion, tomato, salad and house dressing</li>
+                <li>Contains <span id="al">gluten</span></li>
+                <li>Contains <span id="al">lactose</span></li>
             </ul>
         </div>
-        <div style="display: inline-block">
-            <h4>Vegan burger</h4>
-            <img src="https://biancazapatka.com/wp-content/uploads/2020/05/veganer-bohnen-burger.jpg"
-            width="150"
-            height="200"/>
-            <ul>
-                <li>450 kCal</li>
-                <li>Contains gluten</li>
-                <li>Contains nuts</li>
+        <div style="display: inline-block" class="box b">
+            <h4>VEGAN BEAN BURGER</h4>
+            <img src="https://ordinaryvegan.net/wp-content/uploads/2017/11/Vegan-Black-Bean-Burger-with-Beets-and-Quinoa.jpg"
+            width="270"
+            height="250"/>
+            <ul class="allergies">
+                <li>Walnut bread, bean pattie, tomato, avocado and vegan mayonnaise</li>
+                <li>Contains <span id="al">gluten</span></li>
+                <li>Contains <span id="al">nuts</span></li>
             </ul>
         </div>
-        <div style="display: inline-block">
-            <h4>Crispy chicken burger</h4>
-            <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2021-04-how-to-chicken-burgers%2F2021-04-19_ATK-52011"
-            width="200"
-            height="200"/>
-            <ul>
-                <li>550 kCal</li>
-                <li>Contains gluten</li>
-                <li>Contains egg</li>
+        <div style="display: inline-block" class="box c">
+            <h4>CRISPY CHICKEN BURGER</h4>
+            <img src="https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg"
+            width="250"
+            height="250"/>
+            <ul class="allergies">
+                <li>Fried chicken, herb mayonnaise, tomato and pickled onion</li>
+                <li>Contains <span id="al">gluten</span></li>
+                <li>Contains <span id="al">egg</span></li>
             </ul>
         </div>
         </section>
-        <section>
+        <section id="info">
             <h4>Customer information</h4>
             <p>This is where you provide necessary information</p>
             <h4>Delivery information</h4>
-            <fieldset>
                 <p>
                     <label for="fullname">Full name</label><br>
                     <input type="text" id="fullname" name="fn" required="required" placeholder="First- and Last name">
@@ -67,7 +70,6 @@
                     <label for="number">House number</label><br>
                     <input type="number" id="number" name="nr" required="required" placeholder="House number">
                 </p>
-            </fieldset>
             <p>
                 <label for="payment">Payment method</label><be>
                 <select id="payment" name="pym">
@@ -77,7 +79,6 @@
                     <option>Swish</option>
                 </select>
              </p>
-             <fieldset>
                 <legend>Gender</legend>
 
                 <div>
@@ -98,12 +99,10 @@
                 <div>
                     <input type="radio" id="und" name="gender" value="und" checked>
                     <label for="und">Undisclosed</label>
-                </div>
-
-             </fieldset>
+                </div>             
         </section>
     </main>
-    <button type="submit">
+    <button type="submit" class="button">
         <img src="https://image.shutterstock.com/image-vector/fast-shipping-delivery-truck-flat-260nw-353170508.jpg"
         width="20"
         height="15">
