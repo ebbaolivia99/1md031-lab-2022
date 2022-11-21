@@ -1,116 +1,17 @@
-<!DOCTYPE HTML>
-<html lang="en">
-   <head>
-       <meta charset="utf-8"/>
-       <link rel="icon" type="image/svg+xml" href="http://localhost:8080"> 
-       <link rel="stylesheet" href=style.css>
-       <title>Welcome to SuperSmash</title>
-   </head>
-   <body>
-    <header class="header">
-            <img id="headimg" src="https://images.affordableseating.net/dpr_1.0,f_auto,q_auto/afd/media/contenttype/restaurant_bar_-_header.jpg"/>
-            <h1 id="textpos">Welcome to SuperSmash online</h1>  
-    </header>
-
-    <main>
-        <section id="menu" class="wrapper">
-            <h4 class="box d">Select burgers</h4>
-            <p class="box e">This is where you select burgers</p>
-        <div style="display: inline-block" class="box a">
-            <h4>SUPER SMASH BURGER</h4>
-            <img src="https://i.pinimg.com/originals/8f/41/b2/8f41b2d2b12791088da03500bd5cf909.jpg"
-            width="260"
-            height="250"/>
-            <ul class="allergies">
-                <li>Cheese, pickled onion, tomato, salad and house dressing</li>
-                <li>Contains <span id="al">gluten</span></li>
-                <li>Contains <span id="al">lactose</span></li>
-            </ul>
-        </div>
-        <div style="display: inline-block" class="box b">
-            <h4>VEGAN BEAN BURGER</h4>
-            <img src="https://ordinaryvegan.net/wp-content/uploads/2017/11/Vegan-Black-Bean-Burger-with-Beets-and-Quinoa.jpg"
-            width="270"
-            height="250"/>
-            <ul class="allergies">
-                <li>Walnut bread, bean pattie, tomato, avocado and vegan mayonnaise</li>
-                <li>Contains <span id="al">gluten</span></li>
-                <li>Contains <span id="al">nuts</span></li>
-            </ul>
-        </div>
-        <div style="display: inline-block" class="box c">
-            <h4>CRISPY CHICKEN BURGER</h4>
-            <img src="https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg"
-            width="250"
-            height="250"/>
-            <ul class="allergies">
-                <li>Fried chicken, herb mayonnaise, tomato and pickled onion</li>
-                <li>Contains <span id="al">gluten</span></li>
-                <li>Contains <span id="al">egg</span></li>
-            </ul>
-        </div>
-        </section>
-        <section id="info">
-            <h4>Customer information</h4>
-            <p>This is where you provide necessary information</p>
-            <h4>Delivery information</h4>
-                <p>
-                    <label for="fullname">Full name</label><br>
-                    <input type="text" id="fullname" name="fn" required="required" placeholder="First- and Last name">
-                </p>
-                <p>
-                    <label for="email">E-mail</label><br>
-                    <input type="text" id="email" name="em" required="required" placeholder="E-mail address">
-                </p>
-                <p>
-                    <label for="street">Street</label><br>
-                    <input type="text" id="street" name="st" required="required" placeholder="Street name">
-                </p>
-                <p>
-                    <label for="number">House number</label><br>
-                    <input type="number" id="number" name="nr" required="required" placeholder="House number">
-                </p>
-            <p>
-                <label for="payment">Payment method</label><be>
-                <select id="payment" name="pym">
-                    <option selected="selected">Credit card</option>
-                    <option>Cash when deliverd</option>
-                    <option>Klarna</option>
-                    <option>Swish</option>
-                </select>
-             </p>
-                <legend>Gender</legend>
-
-                <div>
-                    <input type="radio" id="woman" name="gender" value="woman" checked>
-                    <label for="woman">Female</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="man" name="gender" value="man" checked>
-                    <label for="man">Male</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="nonbinary" name="gender" value="nonbinary" checked>
-                    <label for="nonbinary">Non-binary</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="und" name="gender" value="und" checked>
-                    <label for="und">Undisclosed</label>
-                </div>             
-        </section>
-    </main>
-    <button type="submit" class="button">
-        <img src="https://image.shutterstock.com/image-vector/fast-shipping-delivery-truck-flat-260nw-353170508.jpg"
-        width="20"
-        height="15">
-        Place my order!
-      </button>
-    <hr>
-    <footer>
-        <p> &copy; 2022 Super Smash inc</p>
-    </footer>
-   </body>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
