@@ -1,0 +1,29 @@
+
+[
+    {
+      "name": "Super Smash burger",
+      "kCal": 600,
+      "info": "Cheese, pickled onion, tomato, salad and house dressing",
+      "lactose": true,
+      "gluten": true,
+      "img": "https://i.pinimg.com/originals/8f/41/b2/8f41b2d2b12791088da03500bd5cf909.jpg"
+    }
+    ,
+    {
+      "name": "Vegan bean burger",
+      "kCal": 450,
+      "info": "Walnut bread, bean pattie, tomato, avocado and vegan mayonnaise",
+      "lactose": false,
+      "gluten": true,
+      "img": "https://ordinaryvegan.net/wp-content/uploads/2017/11/Vegan-Black-Bean-Burger-with-Beets-and-Quinoa.jpg" 
+    }
+    ,
+    {
+      "name": "Crispy chicken burger",
+      "kCal": 550,
+      "info": "Fried chicken, herb mayonnaise, tomato and pickled onion",
+      "lactose": false,
+      "gluten": true,
+      "img": "https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg"
+    }
+  ]
