@@ -201,7 +201,8 @@ export default {
   #map {
     width: 1920px;
     height: 1078px;
-    background: url("/Users/charlottapetersen/1md031-lab-2022/public/img/polacks.jpg");
+    background: url("http://lh4.ggpht.com/-nm71sW2ziq8/TgoGTE1ZItI/AAAAAAAADAI/Ol5uVs-mmzM/karta_uppsala_osm.jpg?imgmax=800");
+    background-size: 1920px, 1078px;
     position:absolute;
     background-repeat: no-repeat;
   }

@@ -9,11 +9,12 @@
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
-      <div id="dots" v-bind:style="{ background: 'url(' + require('../../public/img/polacks.jpg')+ ')' }">
+      <div id="dots">
           <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
             {{ key }}
           </div>
       </div>
+      <!--v-bind:style="{ background: 'scr(' + require('http://lh4.ggpht.com/-nm71sW2ziq8/TgoGTE1ZItI/AAAAAAAADAI/Ol5uVs-mmzM/karta_uppsala_osm.jpg?imgmax=800')+ ')' }-->
     </div>
   </template>
   <script>
@@ -56,15 +57,17 @@
     width:1920px;
     height: 1078px;
     cursor: crosshair;
+    background: url("http://lh4.ggpht.com/-nm71sW2ziq8/TgoGTE1ZItI/AAAAAAAADAI/Ol5uVs-mmzM/karta_uppsala_osm.jpg?imgmax=800");
+    background-size: 1920px, 1078px;
   }
   
   #dots div {
     position: absolute;
     background: black;
     color: white;
-    border-radius: 10px;
-    width:20px;
-    height:20px;
+    border-radius: 40px;
+    width:50px;
+    height:50px;
     text-align: center;
   }
   </style>
